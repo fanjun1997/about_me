@@ -6,6 +6,7 @@ var Global = {
     isScrolling : true,
     section_num : 1
 };
+
 //缓出现函数
 Global.fadeInByOrder = function(selector,interval,callback){
     var i = 1,
@@ -62,7 +63,7 @@ Global.reCal = function(){
     //高度居中主体内容
     $('.section-content').each(function(){
         $(this).css({
-            marginTop: ( $(window).height() - 40 - $(this).height() ) / 2
+            marginTop: ( $(window).height() - 10 - $(this).height() ) / 2
         });
     });
 
