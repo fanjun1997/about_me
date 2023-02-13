@@ -48,9 +48,10 @@
 	<div class="section">
 		<div class="about-content clearfix section-content">
 			<div class="tab">
-				<button class="tablinks" onclick="openCity(event, 'info')" id="defaultOpen">基本信息</button>
-				<button class="tablinks" onclick="openCity(event, 'education')">教育经历</button>
-				<button class="tablinks" onclick="openCity(event, 'army')">参军经历</button>
+				<button class="tablinks" onclick="openInfo(event, 'info')" id="defaultOpen">基本信息</button>
+				<button class="tablinks" onclick="openInfo(event, 'education')">教育经历</button>
+				<button class="tablinks" onclick="openInfo(event, 'army')">参军经历</button>
+				<button class="tablinks" onclick="openInfo(event, 'honer')">所获荣誉</button>
 			  </div>
 			  
 			  <div id="info" class="tabcontent">
@@ -111,12 +112,29 @@
 					<img class="my-photo fade fade4" src="images/ArmyPhoto.jpg" alt="" width="400" height="266" margin-right="50px">
 				</div>	
 			  </div>
+
+			  <div id="honer" class="tabcontent">
+				<div float="left">
+					<h3>所获荣誉</h3>
+					<ul >
+						<li class="honer red">2022.07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 校级本科优秀毕业论文</li>
+						<li class="honer red">2020.12 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第六届移动互联创新大赛国家级三等奖</li>
+						<li class="honer">2020.12 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 一等学习进步奖学金</li>
+						<li class="honer">2021.10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二等社会工作优秀奖学金</li>
+						<li class="honer">2020.09 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 北京交通大学大学生创新创业大赛三等奖</li>
+						<li class="honer">2019.08 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 部队服役期间获一次 “优秀义务兵”称号，两次团级嘉奖</li>
+						<li class="honer">2021.09 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 担任学生军训教官，获得“优秀学生教官”称号</li>
+
+					</ul> 
+				</div>
+				
+			  </div>
 		</div>
 		<a href="#" class="scroll-tip fade fade4">向下滚动</a>
 	</div>
 </div>
 <script>
-	function openCity(evt, cityName) {
+	function openInfo(evt, infoName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -126,7 +144,7 @@
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(infoName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
@@ -179,7 +197,7 @@ document.getElementById("defaultOpen").click();
 					</a> 
 				</div>
 				<div class="works-item fade fade3">
-					<a href="https://www.vipcom.cc/home/mockup/open/id/10497_6a8d3342" target="_blank">
+					<a href="work\TimeLine\work2.html" target="_blank">
 						<img src="images\works\TimeLine.jpg" alt="" width="300" height="180">
 						<div class="work-info">
 							<h2>《时光录》APP开发</h2>
@@ -188,7 +206,7 @@ document.getElementById("defaultOpen").click();
 						</div>
 					</a>
 				</div>
-				<div class="works-item first fade fade4">
+				<!-- <div class="works-item first fade fade4">
 					<a href="http://97866.com/" target="_blank">
 						<img src="images/works/game.jpg" alt="" width="300" height="180">
 						<div class="work-info">
@@ -197,9 +215,9 @@ document.getElementById("defaultOpen").click();
 							<strong>工作详情</strong>：基于 PSD 做前端页面开发，于后端沟通交流。</p>
 						</div>
 					</a>
-				</div>
+				</div> -->
 			</div>
-			<a class="more-link" href="http://yujiangshui.com/product/">查看更多</a>
+			<!-- <a class="more-link" href="http://yujiangshui.com/product/">查看更多</a> -->
 		</div>
 	</div>
 </div>

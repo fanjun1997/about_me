@@ -85,8 +85,18 @@ div.tab button.active {
     margin-top: 20px;
 
 }
-
-
+.honer {
+    font-size: 25px;
+    text-align:left;
+    line-height: 1.5;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    list-style-type:disc;
+}
+.red{
+    color: #ff0000;
+}
 #myIDphoto img{
     cursor: pointer;
     transition: all 0.6s;

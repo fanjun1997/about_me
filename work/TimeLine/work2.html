@@ -1,0 +1,1407 @@
+<!--bkoutstart-->
+<!DOCTYPE html><html>
+    <head>
+    <meta charset="utf-8">
+    <title>《时光录》APP</title>
+    <meta name="description" content="项目介绍">
+    <meta name="keywords" content="">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <link rel="stylesheet" href="./css/bt3.7.css">
+    <link rel="Stylesheet" type="text/css" href="./css/mycore.css?e13?31" />
+    <link rel="Stylesheet" type="text/css" href="./css/myatc.css?312?31" />
+    
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    
+    <script src="./js/jquery-1.11.3.min.js?31"></script>
+    
+     <style>
+        body{
+            margin:0px;
+            padding:0px;
+        }
+        .myiconfont{
+        	font-family: "iconfont" !important;
+			font-style: normal;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+        }
+        .std_title_one{
+            font-size:18px;
+        }
+        .std_btn{
+            border:1px solid #eee;
+            text-align:center;
+            height:50px;
+            line-height:50px;
+            border-radius:5px;
+            width:150px;
+            background-color:#333;
+            color:#fff;
+            cursor:pointer;
+        }
+        .pubbtnpdstd{
+            padding:15px 20px;
+        }
+        .pubbtnpdmid{
+            padding:20px 30px;
+        }
+        .pubbtnpdbig{
+            padding:25px 40px;
+        }
+        .margin-bottom15{
+        	margin-bottom:15px;
+        }
+        .pubftsz10{
+            font-size:10px;
+        }
+        .pubftsz14{
+            font-size:14px;
+        }
+        .pubftsz18{
+            font-size:18px;
+        }
+        .pubftsz22{
+            font-size:22px;
+        }
+        .pubftsz26{
+            font-size:26px;
+        }
+        .pubftsz30{
+            font-size:30px;
+        }
+        .pubftsz40{
+            font-size:40px;
+        }
+        .pubftsz50{
+            font-size:50px;
+        }
+        .pubftsz80{
+            font-size:80px;
+        }
+        .pubftsz100{
+            font-size:100px;
+        }
+        .pubbtnrd_no{
+            border-radius:0px;
+        }
+        .pubbtnrd_5{
+            border-radius:5px;
+        }
+        .pubbtnrd_10{
+            border-radius:10px;
+        }
+        .pubbtnrd_50{
+            border-radius:50px;
+        }
+        .pubpd0{
+            padding:0px;
+        }
+        .margin_auto{
+            margin:auto;
+        }
+        .topradius{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .bottomradius{
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        /** 公共css 可提取出去 自动限制宽高比的图片框  **/
+       
+         .myse_bdd{
+            border:1px solid rgb(0,0,0);
+        }
+        .boxtipsbditms{
+            border-top: 1px red dashed;
+            border-bottom: 1px red dashed;
+        }
+        .mybdlineintro{
+            background-color:#ececec;
+        }
+        .mybdlineintroflash{
+            background: #fff;
+        }
+        .myblockmenk{
+            opacity: 0.9;
+        }
+        .myse_sdb{
+            box-shadow: 3px 3px 20px rgba(0,0,0,0.28);
+        }
+       
+        h1,h2,h3,h4{
+            padding:10px 5px;
+            line-height:1.4;
+        }
+        p{
+        	padding-left:5px;
+        }
+        .my_sub_desp, p{
+        	font-size:15px;
+        	line-height:1.5;
+        }
+        .swiper-pagination-bullet-active{
+            background: rgb(0,0,0);
+        }
+        .swiper-button-next, .swiper-button-prev{
+            color:rgb(0,0,0);
+        }
+        .swiper-bottom-pad{
+            padding-bottom:40px;
+        }
+        #loader-1::before{
+            border: 2px solid transparent;
+            border-top-color: rgb(0,0,0);
+            border-top-width: 2px;
+        } 
+        .gif{
+            height: 100px;
+            width: 100px;
+        }
+        @keyframes animated-border {
+        0% {
+        box-shadow: 0000px rgba(255,255,255,0.4);
+        }
+        100% {
+        box-shadow: 00020px rgba(255,255,255,0);
+        }
+        }
+        #gif-box {
+        animation: animated-border 1.5s infinite;
+        font-family: Arial;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: bold;
+        color: white;
+        border: 2px solid;
+        border-radius: 10px;
+        padding: 0px 20px;
+        margin-left: 170px;
+        margin-top: 50px;
+        height: 642px;
+        width: 300px;
+        } 
+      
+    </style>
+    <style>
+    .js-my-replace-img,.js-my-replace-txt{
+        cursor:pointer;
+        word-break: break-all;
+    }
+    .btmgwgogo:hover{
+        font-weight:600;text-decoration:underline;
+    }
+    lhz{display:block;padding:0;margin:0}
+    .boxdivborder{
+        width:100%;
+        height:50px;
+        line-height:50px;
+        text-align:center;
+        background-color:#333;
+        color:#fff;
+    }
+    .myfullwidth img,.myfullimg{
+        width:100%;
+    }
+    .bgsize100{
+        background-size:100%;
+    }
+       .pubbtnrd_50p{
+            width:50px;
+            height:50px;
+            line-height:50px;
+            text-align:center;
+            border-radius:50%;
+            padding:0px;
+        }
+        .pubbtnrd_80p{
+        	width:80px;
+        	height:80px;
+        	line-height:80px;
+        	text-align:center;
+            border-radius:50%;
+            padding:0px;
+        }
+        .pubbtnrd_100p{
+        	width:100px;
+        	height:100px;
+        	line-height:100px;
+        	text-align:center;
+            border-radius:50%;
+            padding:0px;
+        }
+        .wt_bgcc, .cc_bgcc{
+            background-color:#fff;
+        }
+        .wt_ftcc{
+            color:#fff;
+        }
+        .bk_ftcc{
+            color:#000;
+        }
+        .gray_ftcc{
+            color:#eee;
+        }
+        .bk_bgcc{
+            background-color:#000;
+        }
+        .pubcc{
+            color:rgb(0,0,0) ; 
+        }
+        .pubbgcc{
+            background-color:rgb(0,0,0) ; 
+        }
+        .pubbdcc{
+            border-color:rgb(0,0,0) ; 
+        }
+        .stdpblock_one{
+            margin-top:15px;
+            line-height:20px;
+        }
+        .ctras_cc{
+            color:#fff;
+        }
+        .web_ftcc{
+            color:#fff;
+        }
+        .navboxcc .current{
+            background-color:rgb(0,0,0) ;
+            color:#fff;
+        }
+        .pubbtnbg{
+            background-color:rgb(0,0,0) ; 
+            border:none ; 
+            color:#fff;
+        }
+        .pubbtnwtbg{
+            background-color:#eee ; 
+            border:none ; 
+            color:#333;
+        }
+        .pubbtnline{
+            border-color:rgb(0,0,0) ; 
+            color:rgb(0,0,0);
+        }
+        .pubbtnline:hover{
+            background-color:rgb(0,0,0) ; 
+            border-color:#fff ; 
+            color:#fff;
+        } 
+        .pubbtnbg:hover{
+            background-color:#fff ; 
+            border-color:rgb(0,0,0) ; 
+            color:rgb(0,0,0);
+        }    
+        
+        .pubbtnrd_0p{
+        	background-color:rgba(0,0,0,0);
+        	color:rgb(0,0,0);
+        	padding:0px;
+        }
+        .pubbtnrd_0p:hover{
+        	background-color:rgba(0,0,0,0);
+        }
+        .pubbtnsdcc{
+        	box-shadow: 0 0 4px rgba(0,0,0,0.55), 0 4px 8px rgba(0,0,0,0.28);
+        }
+        .pubbtnsdhb{
+        	box-shadow: 0 0 4px rgba(0,0,0,0.8), 0 4px 8px rgba(0,0,0,0.28);
+        }
+        .pubreadcc{
+        	color:rgb(0,0,0);
+        }
+        .my_img_mask_out{
+        	position:relative;width:100%;height:100%;
+        }
+        .my_img_mask_inner{
+        	position:absolute;opacity:0.8;background:rgb(0,0,0);width:100%;height:100%;
+        }
+        .my_img_mask_inner:hover{
+            display:block;
+        }
+        .inneritemstd{
+            border:1px solid #ececec;
+            border-radius:8px;
+            box-shadow: 0 1px 3px rgba(26,26,26,.1);
+        }
+        .inneritemstd2{
+            border:1px solid #ececec;
+            border-radius:8px;
+        }
+        .inneritemstd3{
+            border:1px solid #ececec;
+            box-shadow: 0 1px 3px rgba(26,26,26,.1);
+        }
+        .inneritemstd4{
+            border:1px solid #ececec;
+        }
+        .publinearcc{
+             background-image: linear-gradient(to bottom , rgb(0,0,0),rgb(0,0,0),rgb(26,24,24),rgb(51,46,44),rgb(77,66,60),rgb(102,87,73))        }
+        @media (max-width: 700px) {
+            .autovcenterpox{
+                display: flex;
+                align-items: center;
+            }
+            .autopadding30_1,.myse_pdbg{
+                 padding:5px;
+            }
+            .automg-bt-30{
+            	margin-bottom:15px;
+            }
+            .automg-bt-100{
+            	margin-bottom:20px;
+            }
+            .autopd-bt-100{
+            	padding-bottom:20px;
+            }
+            .autopadding15,.myse_pda{
+                 padding:5px;
+            }
+            .autopd-vt-big{
+                padding-top:15px;
+            }
+            .autopd-vt-bktit{
+                margin-bottom:15px;
+            }
+            .navbox .container{
+                padding:0px;
+            }
+            .navbox .nav_items{
+                width:100%;
+                background-color:rgb(0,0,0);
+                color:#fff;
+                text-align:center;
+                height:50px;
+            }
+            .navitemsbox{
+                max-height:90vh;
+                overflow-y: scroll;
+                width:100%;
+            }
+            .mystdmbshownav{
+                margin-top: 0px;
+                position: absolute;
+                right: 0;
+                width:40px;
+            }
+            .litdisplaybk{
+                display:block
+            }
+            .pubautow50_100{
+        		width:100%;
+        	}
+                .pubautow40,.pubautow60{
+                    width:100%;
+                    display:block;
+                }    
+            .justmbshow{
+                display:block;
+            }
+            .justpcshow{
+                display:none;
+            }
+            .justmbfirstshow{
+                display:none;
+            }
+            .fixedimgboxdiv_auto_big{
+                display: block;
+                width: 100%;
+                padding-top: 100%;
+                position: relative;
+                overflow:hidden;
+            }
+        }
+        @media (min-width: 700px) {
+            .pcclearfix{
+                clear:both;
+            }
+            .autovcenterpox{
+                display: flex;
+                align-items: center;
+            }
+            .autopadding30_1,.myse_pdbg{
+                padding:30px;
+            }
+            .automg-bt-30{
+            	margin-bottom:30px;
+            }
+            .automg-bt-100{
+            	margin-bottom:100px;
+            }
+            .autopd-bt-100{
+            	padding-bottom:100px;
+            }
+            .autopadding15,.myse_pda{
+                 padding:15px;
+            }
+            .autopd-vt-big{
+                padding-top:50px;
+            }
+            .autopd-vt-bktit{
+                margin-bottom:50px;
+            }
+            .pubautow50_100{
+        		width:50%;
+        	}
+            .pubautow40{
+                width:40%;
+            }   
+            .pubautow60{
+                width:60%;
+            }   
+            .justpcshow{
+                display:block;
+            }
+            .justmbshow{
+                display:none;
+            }
+            .autosz40{
+                font-size:40px;
+            }
+            .autosz60{
+                font-size:60px;
+            }
+            .autosz80{
+                font-size:80px;
+            }
+            .navitemsbox{
+                max-width:75%;
+            }
+            .fixedimgboxdiv_auto_big{
+                display: block;
+                width: 100%;
+                padding-top: 50%;
+                position: relative;
+                overflow:hidden;
+            }
+        } 
+        .myblocksetbtn{
+            background-color: #333;
+            padding-bottom:15px;
+        }
+        .myblocksetbtnsub{
+            margin-left:5px;
+            float:left;
+            text-align: center;
+            font-size:14px;
+            cursor:pointer
+        }
+        .mybtnp_close{
+             color: #fff;
+             text-align:center;
+        }     
+    	@media (min-width: 600px) {
+		 	.clearpc{
+		 		clear:both;
+		 	}
+		 	.clearmb{
+		 		display:none;
+		 	}
+		 }
+		 @media (max-width: 600px) {
+		 	.clearpc{
+		 		display:none;
+		 	}
+		 	.clearmb{
+		 		clear:both;
+		 	}
+		 	.bktitbox h1{
+		 		font-size:28px;
+		 		margin:0px;
+		 		padding:10px 0;
+		 	}
+		 }
+</style>    
+  </head> 
+<body class="cc_bgcc" data-skip-type="0" data-bd_bgtype="bgimg" style="background-color:rgb(255, 255, 255);background-image: url('./image/63e70b86b13cc.jpeg');background-size:100%;">
+       <div id="preloader" class="myjsloader">
+        <div class="loader" id="loader-1"></div>
+      </div>
+      <!--bkoutend-->
+      
+            <!--bkoutstart-->
+<div id="bk_56138" data-mkid="0" data-mix-mkbkid="0_bk_56138" data-cover="https://cdn.vipcom.cc/Public/image/block/nv_opc0s.png?31" 
+         data-name="双状态导航(首屏时导航背景透明，下拉时显示背景色)"
+         data-file-path="Block/Nav/nv_opc0s"
+         data-bid="56138"
+         data-order=""
+         data-use-type="nav"
+         data-vip-level="0"
+         class="blockpos cc_bgcc_bak js-my-pblock "
+         style="background-image:url();"  data-bgsrc="null" data-id="10497_bk_56138_bg"  data-href='' data-pmkid="0" data-img-type="css" data-is_del="" data-mb-show=""  data-class=""
+         data-hide="0" 
+         data-hide-exp=""
+         data-hide-status="0"
+         data-align="center"
+         >
+        <!--bkoutend-->
+        <!--bkoutstart-->
+                <!--bkoutend-->
+                
+                <div style="display:none;" class="btn_set_cc btn_set_bgcc"  data-mypop-data="{bkbgcc:{def:'rgba(0, 0, 0, 0.15)',type:'color',title:'内框背景色'}}" ></div>
+                <!--bkoutstart-->
+                <!--bkoutend-->
+        <!--bkoutstart-->
+        
+        <div id="bk_56138_blockrendbox" class="blockrendbox" >  <!--bkoutend-->
+            <style>
+    .navopcbox{
+        height:80px;
+        width:100%;
+    }
+    .nav_items{
+        float:left;
+        height:80px;
+        padding:0px 15px;
+        line-height:80px;
+    }
+    .nav_items a{
+
+    }    
+    @media (min-width: 800px) {
+        .mylog{
+            height:80px;
+        }
+        .navopcbox{
+            height:80px;
+            width:100%;
+        }
+        .nav_items{
+            float:left;
+            height:80px;
+            padding:0px 15px;
+            line-height:80px;
+        }
+        #navopcbox .navitemsbox{
+        	height:80px;
+        	overflow-y: auto;
+        }
+    }
+    @media (max-width: 800px) {
+        .mylog{
+            height:50px;
+        }
+        .navopcbox{
+            height:50px;
+            width:100%;
+        }
+        .nav_items{
+            float:left;
+            height:50px;
+            padding:0px 15px;
+            line-height:50px;
+        }
+         .navitemsbox{
+            width:100%;
+        }
+    }    
+</style>
+
+<div style="display:hidden;" class="notsetblockbg notsetblockbgcc notsetblock_pd_mg notsetblockbg btn_set_data" data-mypop-data="{bkbgcc:{def:'null',type:'color',title:'滚动后背景色'},bkftcc:{data:[{s:'白色',v:'wt_ftcc'},{s:'黑色',v:'bk_ftcc'}],def:'wt_ftcc',type:'tag_select',title:'字体颜色'}}" ></div>
+<!--blockname 双状态导航(首屏时导航背景透明，下拉时显示背景色) blocknameend-->
+<!--blockname 页面出于顶部时，导航的背景是透明的，下拉时背景色会被填充 blocknameend-->
+
+<div id="navopcbox"  data-bgcc="rgb(0,0,0)" data-ftcc="#fff" class="navbox scrolltopcgcc navopcbox blockpos sfixedtopnav navbar-fixed-top inner_set_num map_block_bg" data-key="lpk" data-lp-num="2" data-lp-title="导航链接数量调整">
+    <div class="container no_set_bg">
+        <div style="float:left;max-width:380px;">
+            <img class="mylog svg_img js-my-replace-img isfixedimg" src="./image/63b91dc24d6dd.png"   data-must-crop="" data-myimg-width="" data-myimg-ration="" data-id="10497_bk_56138_mylogo2"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">
+        </div>  
+        
+        <div data="2" class="navitemsbox justmbfirstshow  pull-right">
+                                <div class="nav_items js_mystdmbshownav current">
+                        <a href="#bk_56139" class="nav_fixed_pos js_mystdmbshownav my-not-act wt_ftcc">
+                            <lhz   data-id="10497_bk_56138_nav_txt_1"  data-href='block:bk_56139' data-pmkid="0" data-is_del="0" class="js-my-replace-txt"><span style="color:#FFFFFF;"><span style="color:#FFFFFF;">项目介绍</span></span></lhz>                        </a>
+                    </div>    
+                                    <div class="nav_items js_mystdmbshownav ">
+                        <a href="#bk_56145" class="nav_fixed_pos js_mystdmbshownav my-not-act wt_ftcc">
+                            <lhz   data-id="10497_bk_56138_nav_txt_2"  data-href='block:bk_56145' data-pmkid="0" data-is_del="" class="js-my-replace-txt">APP界面</lhz>                        </a>
+                    </div>    
+                                
+                       <div class="nav_items justmbshow js_mystdmbshownav">   
+                <a class="nav_fixed_pos  my-not-ac" href="#">   × </a>
+            </div>   
+        </div>
+        <div class="mystdmbshownav justmbshow js_mystdmbshownav">
+                <svg style="margin-top:15px;" t="1606270350774" class="iconmbbtn" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2757" width="20px" height="20px"><path d="M66.488889 211.781818h891.022222c28.198788 0 50.980202-22.238384 50.980202-49.648485 0-27.397172-22.768485-49.648485-50.980202-49.648485H66.488889C38.341818 112.484848 15.508687 134.723232 15.508687 162.133333s22.833131 49.648485 50.980202 49.648485z m891.009293 248.242424H66.488889C38.277172 460.024242 15.508687 482.262626 15.508687 509.672727s22.768485 49.648485 50.980202 49.648485h891.022222c28.198788 0 50.980202-22.238384 50.980202-49.648485-0.012929-27.410101-22.923636-49.648485-50.993131-49.648485z m0 351.63798H66.488889c-28.134141 0-50.980202 22.238384-50.980202 49.648485s22.833131 49.648485 50.980202 49.648485h891.022222c28.198788 0 50.980202-22.238384 50.980202-49.648485-0.012929-27.397172-22.781414-49.648485-50.993131-49.648485z m0 0" p-id="2758" fill="#ffffff"></path></svg>
+        </div>
+        <div style="clear:both"></div>
+        
+        
+    </div>
+</div>
+<div style="clear:both"></div>        </div>    
+    </div>
+
+ 
+          <!--bkoutstart-->
+<div id="bk_56139" data-mkid="0" data-mix-mkbkid="0_bk_56139" data-cover="https://cdn.vipcom.cc/Public/image/block/if_2.png?31" 
+         data-name="左右滑动的动态个人介绍模块"
+         data-file-path="Block/infor/if_2"
+         data-bid="56139"
+         data-order="0"
+         data-use-type=""
+         data-vip-level="0"
+         class="blockpos cc_bgcc_bak js-my-pblock autopd-bt-100"
+         style="background-image:url();margin-top:0px;margin-bottom:0px;padding-top:0px;padding-bottom:0px;"  data-bgsrc="null" data-id="10497_bk_56139_bg"  data-href='' data-pmkid="0" data-img-type="css" data-is_del="" data-mb-show=""  data-class=""
+         data-hide="1" 
+         data-hide-exp="0"
+         data-hide-status="0"
+         data-align="center"
+         >
+        <!--bkoutend-->
+        <!--bkoutstart-->
+                <!--bkoutend-->
+                
+                <div style="display:none;" class="btn_set_cc btn_set_bgcc"  data-mypop-data="{bkbgcc:{def:'rgb(0, 105, 128)',type:'color',title:'内框背景色'}}" ></div>
+                <!--bkoutstart-->
+                  <div style="" class=" bktitbox container autopd-vt-bktit text-center" >
+             <h1><lhz   data-id="10497_bk_56139_bktt_"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">《时光录》APP项目介绍</lhz></h1>
+             <p><lhz  style="display:none;" data-id="10497_bk_56139_bkttdp_" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz></p>
+          </div>
+                <!--bkoutend-->
+        <!--bkoutstart-->
+        
+        <div id="bk_56139_blockrendbox" class="blockrendbox" >  <!--bkoutend-->
+            <style>
+    .infotop1{
+        padding:15px 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }  
+    .roundimgbox{
+        margin:15px 0;
+    }
+     .roundimgbox img{
+        width:100px;
+        height:100px;
+        border-radius: 50%;
+    }   
+</style>    
+
+<!--blockname 个人介绍 第二种 blocknameend-->
+
+<div class="container inner_set_num inneritemstd2 wt_bgcc" data-key="lpbk" data-lp-num="2" data-lp-title=""> 
+        <div class=" margin-bottom15 ">  
+      
+        
+        <div class="row pubbgcc autopadding30_1 topradius" style="background-color:rgb(0, 105, 128);">
+            <div class=" col-md-3 col-xs-12 ">
+                <div class=" text-center">  
+                  <div class="roundimgbox">  
+                    <img class=" img-responsive center-block js-my-replace-img " src="./image/63b8d3ebde3c4.jpg"   data-must-crop="1" data-myimg-width="200" data-myimg-ration="200:200" data-id="10497_bk_56139_igk_1"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">                  </div>
+                </div>
+           </div>
+           <div class=" col-md-9 col-xs-12 ">
+                  <h3 class="ctras_cc">
+                        <lhz   data-id="10497_bk_56139_tt1_1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">《时光录》安卓APP</lhz>                  </h3>
+                  <p class="ctras_cc">
+                      <lhz  style="display:none;" data-id="10497_bk_56139_ttn_1" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz>                  </p>
+           </div>
+      </div>  
+        
+        
+      <div class="row autopadding30_1">
+        <div class=" col-md-6 col-xs-6 " >
+          <div class="cc_bgcc ">        
+            <img class=" img-responsive center-block js-my-replace-img " src="./image/63e74a356306b.jpg"   data-must-crop="" data-myimg-width="800" data-myimg-ration="" data-id="10497_bk_56139_ig_1"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">  
+          </div>
+        </div>
+        <div class=" col-md-6 col-xs-6 ">
+          <div class="cc_bgcc ">        
+            <h3>
+               <lhz   data-id="10497_bk_56139_tt3_1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">项目介绍</lhz>            </h3>
+            <p>
+                <lhz   data-id="10497_bk_56139_ttp4_1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span style="font-family:font-size:14px;white-space:normal;background-color:#FFFFFF;"><span ><strong>项目时间</strong>：2021.05-2021.07</span></span></lhz>            </p>
+            <p>
+                <lhz   data-id="10497_bk_56139_ttp5_1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span ><strong>项目身份</strong>：小组长</span></lhz>            </p>  
+            <p>
+                <lhz   data-id="10497_bk_56139_ttp6_1"  data-href='' data-pmkid="0" data-is_del="0" class="js-my-replace-txt"><strong>课程成绩</strong>：<span style="color:#E53333;">A</span></lhz>            </p>  
+            <p>
+                <lhz   data-id="10497_bk_56139_ttp7_1"  data-href='' data-pmkid="0" data-is_del="0" class="js-my-replace-txt"><strong style="white-space:normal;">技术栈：</strong><span style="white-space:normal;">安卓开发基础、SQLite</span></lhz>            </p>  
+          </div>
+        </div>
+          
+      </div> 
+          
+      </div>
+        <div class=" margin-bottom15 ">  
+      
+        
+        <div class="row pubbgcc autopadding30_1 topradius" style="background-color:rgb(0, 105, 128);">
+            <div class=" col-md-3 col-xs-12 ">
+                <div class=" text-center">  
+                  <div class="roundimgbox">  
+                                      </div>
+                </div>
+           </div>
+           <div class=" col-md-9 col-xs-12 ">
+                  <h3 class="ctras_cc">
+                        <lhz  style="display:none;" data-id="10497_bk_56139_tt1_2" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz>                  </h3>
+                  <p class="ctras_cc">
+                      <lhz  style="display:none;" data-id="10497_bk_56139_ttn_2" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz>                  </p>
+           </div>
+      </div>  
+        
+        
+      <div class="row autopadding30_1">
+        <div class=" col-md-6 col-xs-6 " >
+          <div class="cc_bgcc ">        
+            <img class=" img-responsive center-block js-my-replace-img " src="./image/20230211100208340.png"   data-must-crop="" data-myimg-width="800" data-myimg-ration="" data-id="10497_bk_56139_ig_2"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">  
+          </div>
+        </div>
+        <div class=" col-md-6 col-xs-6 ">
+          <div class="cc_bgcc ">        
+            <h3>
+               <lhz   data-id="10497_bk_56139_tt3_2"  data-href='' data-pmkid="0" data-is_del="0" class="js-my-replace-txt">项目介绍</lhz>            </h3>
+            <p>
+                <lhz   data-id="10497_bk_56139_ttp4_2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span><span style="font-family:&quot;font-size:15px;white-space:normal;background-color:#FFFFFF;"><strong>项目描述</strong>：该项目主要完成时光录APP开发，该系统分为用户登录/注册、时光轴、添加、设置、发现五个模块。与2名同学共同努力下，分别在用户登录模块实现了用户注册、验证码、登录功能；时光轴模块实现了时光轴显示、时间删除功能；添加模块实现了添加事务功能；发现模块实现了历史上的今天、天气、今日热搜榜功能，设置模块实现了黑夜/白天模式切换，重新登录等功能。</span></span></lhz>            </p>
+            <p>
+                <lhz   data-id="10497_bk_56139_ttp5_2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span style="white-space:normal;color:#666666;font-family:&quot;background-color:#FFFFFF;"><strong><span style="color:#000000;">主要工作</span></strong><span style="color:#000000;">：</span><span style="color:#000000;">在本项目中本人主要是作为Leader的角色统筹整个项目，对项目进展进行把握，提出方案。</span></span><br style="white-space:normal;box-sizing:border-box;outline:none;color:#666666;font-family:&quot;background-color:#FFFFFF;" /><span style="white-space:normal;color:#000000;font-family:&quot;background-color:#FFFFFF;">在项目中主要完成了用户登录模块和设置模块，将另外两个人的代码进行整合，实现页面切换。在用户登录模块应用了SQLite数据库进行存储验证，在设置模块实现全局模式转换。</span></lhz>            </p>  
+            <p>
+                <lhz  style="display:none;" data-id="10497_bk_56139_ttp6_2" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz>            </p>  
+            <p>
+                <lhz  style="display:none;" data-id="10497_bk_56139_ttp7_2" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz>            </p>  
+          </div>
+        </div>
+          
+      </div> 
+          
+      </div>
+    </div>        </div>    
+    </div>
+
+ 
+          <!--bkoutstart-->
+<div id="bk_56145" data-mkid="0" data-mix-mkbkid="0_bk_56145" data-cover="https://cdn.vipcom.cc/Public/image/block/sg_two.png?31" 
+         data-name="两张相册图片叠加"
+         data-file-path="Block/Singel/sg_two"
+         data-bid="56145"
+         data-order="1"
+         data-use-type=""
+         data-vip-level="0"
+         class="blockpos cc_bgcc_bak js-my-pblock automg-bt-100"
+         style="background-image:url();margin-top:100px;margin-bottom:0px;padding-top:0px;padding-bottom:0px;"  data-bgsrc="null" data-id="10497_bk_56145_bg"  data-href='' data-pmkid="0" data-img-type="css" data-is_del="" data-mb-show=""  data-class=""
+         data-hide="1" 
+         data-hide-exp=""
+         data-hide-status="0"
+         data-align="center"
+         >
+        <!--bkoutend-->
+        <!--bkoutstart-->
+                <!--bkoutend-->
+                
+                <div style="display:none;" class="btn_set_cc btn_set_bgcc"  data-mypop-data="{bkbgcc:{def:'#fff',type:'color',title:'内框背景色'}}" ></div>
+                <!--bkoutstart-->
+                  <div style="" class=" bktitbox container autopd-vt-bktit text-center" >
+             <h1><lhz   data-id="10497_bk_56145_bktt_"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">APP界面</lhz></h1>
+             <p><lhz   data-id="10497_bk_56145_bkttdp_"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span class="justftsz_22" >注册和登录界面</span></lhz></p>
+          </div>
+                <!--bkoutend-->
+        <!--bkoutstart-->
+        
+        <div id="bk_56145_blockrendbox" class="blockrendbox" >  <!--bkoutend-->
+             <style>
+ @media (min-width: 600px) {
+	 .about-imgboxone{
+	 	width: 100%;
+		float: left;
+		background-color: #fff;
+		height: auto;
+		margin-left: 60px;
+		position: relative;
+		z-index: 2;
+	 }
+	 .about-imgboxtwo{
+	 	width: 100%;
+		float: left;
+		background-color: #fff;
+		height: auto;
+		margin-top: 60px;
+		margin-left: -80px;
+		position: relative;
+		z-index: 1;
+	 }
+ }
+ </style>
+ 
+ <!--blockname 两张图片叠加 blocknameend-->
+ <div class="container autopd-vt-big-bak ">
+   <div class="row  ">
+       <div class="col-md-6 col-xs-12 autopadding15" >
+           <div  class="about-imgboxone  text-center inneritemstd autopadding30_1  inner_set_style" data-kui-anim=""> 
+          		<img class=" img-responsive center-block js-my-replace-img " src="./image/63e7000a41e87.jpg"   data-must-crop="" data-myimg-width="800" data-myimg-ration="" data-id="10497_bk_56145_p1a"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">	            <h2>
+	             <lhz   data-id="10497_bk_56145_tt_"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span >登录界面</span></lhz>	            </h2>
+        	</div>
+        </div>
+        
+        <div class="col-md-6 col-xs-12 autopadding15" >
+       		<div  class="about-imgboxtwo  text-center  inneritemstd autopadding30_1  inner_set_style" data-kui-anim=""> 
+          		<img class=" img-responsive center-block js-my-replace-img " src="./image/20230211104235599.png"   data-must-crop="" data-myimg-width="800" data-myimg-ration="" data-id="10497_bk_56145_p1b"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">	        	<h2>
+	             <lhz   data-id="10497_bk_56145_ttb_"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">注册界面</lhz>	            </h2>
+        	</div>
+        </div>
+   </div>
+</div>        </div>    
+    </div>
+
+ 
+          <!--bkoutstart-->
+<div id="bk_56144" data-mkid="0" data-mix-mkbkid="0_bk_56144" data-cover="https://cdn.vipcom.cc/Public/image/block/sg_0gp_cv_shuli.png?31" 
+         data-name="修长的图片格子"
+         data-file-path="Block/Singel/sg_0gp_cv_shuli"
+         data-bid="56144"
+         data-order="2"
+         data-use-type=""
+         data-vip-level="0"
+         class="blockpos cc_bgcc_bak js-my-pblock autopd-bt-100"
+         style="background-image:url();margin-top:100px;margin-bottom:0px;padding-top:0px;padding-bottom:0px;"  data-bgsrc="null" data-id="10497_bk_56144_bg"  data-href='' data-pmkid="0" data-img-type="css" data-is_del="" data-mb-show=""  data-class=""
+         data-hide="1" 
+         data-hide-exp=""
+         data-hide-status="0"
+         data-align="center"
+         >
+        <!--bkoutend-->
+        <!--bkoutstart-->
+                <!--bkoutend-->
+                
+                
+        <div style="display:none;" class="btn_set_cc btn_set_ftcc"  data-mypop-data="{intro:{type:'intro',title:'注：如果您给目标单独设置了颜色，以下设置将没有效果'},bkftcc:{def:'bk_ftcc',data:[{s:'黑色',v:'bk_ftcc'},{s:'白色',v:'wt_ftcc'},{s:'灰色',v:'gray_ftcc'},{s:'自动主题色',v:'pubcc'}],type:'tag_select',title:'内框字体颜色'}}" ></div>
+        
+                <div style="display:none;" class="btn_set_imgrt"  data-mypop-data="{bkimgrt:{def:'200',data:[{s:'100:100(正方图)',v:'100'},{s:'100:66(横图)',v:'66'},{s:'100:56(横图)',v:'56'},{s:'100:134(竖图)',v:'134'},{s:'100:150(竖图)',v:'150'},{s:'100:200(竖图)',v:'200'},{s:'无比例约束，请自行裁剪统一比例图片，比例不统一版式可能错乱',v:''}],type:'tag_select',title:'图片宽高比'}}" >fixedimgboxdiv_std fixedimgboxdiv_s200</div>
+                <!--bkoutstart-->
+                  <div style="" class=" bktitbox container autopd-vt-bktit text-center" >
+             <h1><lhz  style="display:none;" data-id="10497_bk_56144_bktt_" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz></h1>
+             <p><lhz   data-id="10497_bk_56144_bkttdp_"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span class="justftsz_22" style="color:#FFFFFF;">功能界面</span></lhz></p>
+          </div>
+                <!--bkoutend-->
+        <!--bkoutstart-->
+        
+        <div id="bk_56144_blockrendbox" class="blockrendbox" >  <!--bkoutend-->
+            <style>
+    .fixcovertithb{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        z-index:2;
+        transition: .3s all;
+        width:100%;
+        height:100%;
+        vertical-align:middle;
+        padding:15px;
+        padding-top:110%;
+        color:#fff0;
+    }
+    .fixcovertithb:hover{
+        background-color:#33333370;
+        color:#fff;  
+    }
+</style>    
+
+<!--blockname 没有间隙的竖立的图 blocknameend-->
+<div class="container inner_set_num" data-key="lpjk" data-lp-num="4" data-lp-title="">  
+    <div class="row  set_line_num" data-now-lenm="3">  
+            <div class=" col-md-3 col-xs-3 " style="padding:0;" >
+        <div class=" text-center pclickbox">  
+        	<div class="fixedimgboxdiv_std fixedimgboxdiv_s200">
+            <img class=" img-responsive center-block js-my-replace-img " src="./image/20230211113351352.png"   data-must-crop="" data-myimg-width="600" data-myimg-ration="600:1200" data-id="10497_bk_56144_ig1_1"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">            </div> 
+            <h4 class="fixcovertithb map_click bk_ftcc" data-type="pfind" data-p=".pclickbox" data-target="img">
+                <lhz   data-id="10497_bk_56144_ttp_1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">时光轴</lhz>            </h4>  
+        </div>
+      </div>
+            <div class=" col-md-3 col-xs-3 " style="padding:0;" >
+        <div class=" text-center pclickbox">  
+        	<div class="fixedimgboxdiv_std fixedimgboxdiv_s200">
+            <img class=" img-responsive center-block js-my-replace-img " src="./image/20230211105122724.png"   data-must-crop="" data-myimg-width="600" data-myimg-ration="600:1200" data-id="10497_bk_56144_ig1_2"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">            </div> 
+            <h4 class="fixcovertithb map_click bk_ftcc" data-type="pfind" data-p=".pclickbox" data-target="img">
+                <lhz   data-id="10497_bk_56144_ttp_2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">添加</lhz>            </h4>  
+        </div>
+      </div>
+            <div class=" col-md-3 col-xs-3 " style="padding:0;" >
+        <div class=" text-center pclickbox">  
+        	<div class="fixedimgboxdiv_std fixedimgboxdiv_s200">
+            <img class=" img-responsive center-block js-my-replace-img " src="./image/20230211105143948.png"   data-must-crop="" data-myimg-width="600" data-myimg-ration="600:1200" data-id="10497_bk_56144_ig1_3"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">            </div> 
+            <h4 class="fixcovertithb map_click bk_ftcc" data-type="pfind" data-p=".pclickbox" data-target="img">
+                <lhz   data-id="10497_bk_56144_ttp_3"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">发现</lhz>            </h4>  
+        </div>
+      </div>
+            <div class=" col-md-3 col-xs-3 " style="padding:0;" >
+        <div class=" text-center pclickbox">  
+        	<div class="fixedimgboxdiv_std fixedimgboxdiv_s200">
+            <img class=" img-responsive center-block js-my-replace-img " src="./image/20230211105427903.png"   data-must-crop="" data-myimg-width="600" data-myimg-ration="600:1200" data-id="10497_bk_56144_ig1_4"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">            </div> 
+            <h4 class="fixcovertithb map_click bk_ftcc" data-type="pfind" data-p=".pclickbox" data-target="img">
+                <lhz   data-id="10497_bk_56144_ttp_4"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">设置</lhz>            </h4>  
+        </div>
+      </div>
+        
+      </div>
+</div>        </div>    
+    </div>
+
+ 
+          <!--bkoutstart-->
+<div id="bk_56157" data-mkid="0" data-mix-mkbkid="0_bk_56157" data-cover="https://cdn.vipcom.cc/Public/image/block/sg_0gp_cv_shuli.png?31" 
+         data-name="修长的图片格子"
+         data-file-path="Block/Singel/sg_0gp_cv_shuli"
+         data-bid="56157"
+         data-order="3"
+         data-use-type=""
+         data-vip-level="0"
+         class="blockpos cc_bgcc_bak js-my-pblock autopd-bt-100"
+         style="background-image:url();margin-top:100px;margin-bottom:0px;padding-top:0px;padding-bottom:100px;"  data-bgsrc="null" data-id="10497_bk_56157_bg"  data-href='' data-pmkid="0" data-img-type="css" data-is_del="" data-mb-show=""  data-class=""
+         data-hide="1" 
+         data-hide-exp=""
+         data-hide-status="0"
+         data-align="center"
+         >
+        <!--bkoutend-->
+        <!--bkoutstart-->
+                <!--bkoutend-->
+                
+                
+        <div style="display:none;" class="btn_set_cc btn_set_ftcc"  data-mypop-data="{intro:{type:'intro',title:'注：如果您给目标单独设置了颜色，以下设置将没有效果'},bkftcc:{def:'bk_ftcc',data:[{s:'黑色',v:'bk_ftcc'},{s:'白色',v:'wt_ftcc'},{s:'灰色',v:'gray_ftcc'},{s:'自动主题色',v:'pubcc'}],type:'tag_select',title:'内框字体颜色'}}" ></div>
+        
+                <div style="display:none;" class="btn_set_imgrt"  data-mypop-data="{bkimgrt:{def:'200',data:[{s:'100:100(正方图)',v:'100'},{s:'100:66(横图)',v:'66'},{s:'100:56(横图)',v:'56'},{s:'100:134(竖图)',v:'134'},{s:'100:150(竖图)',v:'150'},{s:'100:200(竖图)',v:'200'},{s:'无比例约束，请自行裁剪统一比例图片，比例不统一版式可能错乱',v:''}],type:'tag_select',title:'图片宽高比'}}" >fixedimgboxdiv_std fixedimgboxdiv_s200</div>
+                <!--bkoutstart-->
+                  <div style="" class=" bktitbox container autopd-vt-bktit text-center" >
+             <h1><lhz  style="display:none;" data-id="10497_bk_56157_bktt_" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz></h1>
+             <p><lhz   data-id="10497_bk_56157_bkttdp_"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span class="justftsz_22" style="color:#FFFFFF;">“发现”页面子页面</span></lhz></p>
+          </div>
+                <!--bkoutend-->
+        <!--bkoutstart-->
+        
+        <div id="bk_56157_blockrendbox" class="blockrendbox" >  <!--bkoutend-->
+            <style>
+    .fixcovertithb{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        z-index:2;
+        transition: .3s all;
+        width:100%;
+        height:100%;
+        vertical-align:middle;
+        padding:15px;
+        padding-top:110%;
+        color:#fff0;
+    }
+    .fixcovertithb:hover{
+        background-color:#33333370;
+        color:#fff;  
+    }
+</style>    
+
+<!--blockname 没有间隙的竖立的图 blocknameend-->
+<div class="container inner_set_num" data-key="lpjk" data-lp-num="4" data-lp-title="">  
+    <div class="row  set_line_num" data-now-lenm="3">  
+            <div class=" col-md-3 col-xs-3 " style="padding:0;" >
+        <div class=" text-center pclickbox">  
+        	<div class="fixedimgboxdiv_std fixedimgboxdiv_s200">
+            <img class=" img-responsive center-block js-my-replace-img " src="./image/63e70439e7c8c.jpg"   data-must-crop="" data-myimg-width="600" data-myimg-ration="600:1200" data-id="10497_bk_56157_ig1_1"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">            </div> 
+            <h4 class="fixcovertithb map_click bk_ftcc" data-type="pfind" data-p=".pclickbox" data-target="img">
+                <lhz   data-id="10497_bk_56157_ttp_1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><strong></strong><span class="justftsz_22" >发现</span><br /><br />热搜榜</lhz>            </h4>  
+        </div>
+      </div>
+            <div class=" col-md-3 col-xs-3 " style="padding:0;" >
+        <div class=" text-center pclickbox">  
+        	<div class="fixedimgboxdiv_std fixedimgboxdiv_s200">
+            <img class=" img-responsive center-block js-my-replace-img " src="./image/63e70474c90f5.jpg"   data-must-crop="" data-myimg-width="600" data-myimg-ration="600:1200" data-id="10497_bk_56157_ig1_2"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">            </div> 
+            <h4 class="fixcovertithb map_click bk_ftcc" data-type="pfind" data-p=".pclickbox" data-target="img">
+                <lhz   data-id="10497_bk_56157_ttp_2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span class="justftsz_22">发现<br /></span><br />新闻详情</lhz>            </h4>  
+        </div>
+      </div>
+            <div class=" col-md-3 col-xs-3 " style="padding:0;" >
+        <div class=" text-center pclickbox">  
+        	<div class="fixedimgboxdiv_std fixedimgboxdiv_s200">
+            <img class=" img-responsive center-block js-my-replace-img " src="./image/63e70462517c3.jpg"   data-must-crop="" data-myimg-width="600" data-myimg-ration="600:1200" data-id="10497_bk_56157_ig1_3"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">            </div> 
+            <h4 class="fixcovertithb map_click bk_ftcc" data-type="pfind" data-p=".pclickbox" data-target="img">
+                <lhz   data-id="10497_bk_56157_ttp_3"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span class="justftsz_22">发现<br /></span><br />天气</lhz>            </h4>  
+        </div>
+      </div>
+            <div class=" col-md-3 col-xs-3 " style="padding:0;" >
+        <div class=" text-center pclickbox">  
+        	<div class="fixedimgboxdiv_std fixedimgboxdiv_s200">
+            <img class=" img-responsive center-block js-my-replace-img " src="./image/63e7044f2eca8.jpg"   data-must-crop="" data-myimg-width="600" data-myimg-ration="600:1200" data-id="10497_bk_56157_ig1_4"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">            </div> 
+            <h4 class="fixcovertithb map_click bk_ftcc" data-type="pfind" data-p=".pclickbox" data-target="img">
+                <lhz   data-id="10497_bk_56157_ttp_4"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span class="justftsz_22" >发现<br /></span><br />历史上的今天</lhz>            </h4>  
+        </div>
+      </div>
+        
+      </div>
+</div>        </div>    
+    </div>
+
+ 
+          <!--bkoutstart-->
+<div id="bk_56183" data-mkid="0" data-mix-mkbkid="0_bk_56183" data-cover="https://cdn.vipcom.cc/Public/image/block/sg_0gp_cv_shuli.png?31" 
+         data-name="修长的图片格子"
+         data-file-path="Block/Singel/sg_0gp_cv_shuli"
+         data-bid="56183"
+         data-order="4"
+         data-use-type=""
+         data-vip-level="0"
+         class="blockpos cc_bgcc_bak js-my-pblock autopd-bt-100"
+         style="background-image:url();"  data-bgsrc="null" data-id="10497_bk_56183_bg"  data-href='' data-pmkid="0" data-img-type="css" data-is_del="" data-mb-show=""  data-class=""
+         data-hide="1" 
+         data-hide-exp=""
+         data-hide-status="0"
+         data-align="center"
+         >
+        <!--bkoutend-->
+        <!--bkoutstart-->
+                <!--bkoutend-->
+                
+                
+        <div style="display:none;" class="btn_set_cc btn_set_ftcc"  data-mypop-data="{intro:{type:'intro',title:'注：如果您给目标单独设置了颜色，以下设置将没有效果'},bkftcc:{def:'bk_ftcc',data:[{s:'黑色',v:'bk_ftcc'},{s:'白色',v:'wt_ftcc'},{s:'灰色',v:'gray_ftcc'},{s:'自动主题色',v:'pubcc'}],type:'tag_select',title:'内框字体颜色'}}" ></div>
+        
+                <div style="display:none;" class="btn_set_imgrt"  data-mypop-data="{bkimgrt:{def:'200',data:[{s:'100:100(正方图)',v:'100'},{s:'100:66(横图)',v:'66'},{s:'100:56(横图)',v:'56'},{s:'100:134(竖图)',v:'134'},{s:'100:150(竖图)',v:'150'},{s:'100:200(竖图)',v:'200'},{s:'无比例约束，请自行裁剪统一比例图片，比例不统一版式可能错乱',v:''}],type:'tag_select',title:'图片宽高比'}}" >fixedimgboxdiv_std fixedimgboxdiv_s200</div>
+                <!--bkoutstart-->
+                  <div style="" class=" bktitbox container autopd-vt-bktit text-center" >
+             <h1><lhz  style="display:none;" data-id="10497_bk_56183_bktt_" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz></h1>
+             <p><lhz   data-id="10497_bk_56183_bkttdp_"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span style="color:#FFFFFF;" class="justftsz_22">黑夜模式</span></lhz></p>
+          </div>
+                <!--bkoutend-->
+        <!--bkoutstart-->
+        
+        <div id="bk_56183_blockrendbox" class="blockrendbox" >  <!--bkoutend-->
+            <style>
+    .fixcovertithb{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        z-index:2;
+        transition: .3s all;
+        width:100%;
+        height:100%;
+        vertical-align:middle;
+        padding:15px;
+        padding-top:110%;
+        color:#fff0;
+    }
+    .fixcovertithb:hover{
+        background-color:#33333370;
+        color:#fff;  
+    }
+</style>    
+
+<!--blockname 没有间隙的竖立的图 blocknameend-->
+<div class="container inner_set_num" data-key="lpjk" data-lp-num="3" data-lp-title="">  
+    <div class="row  set_line_num" data-now-lenm="4">  
+            <div class=" col-md-4 col-xs-4 " style="padding:0;" >
+        <div class=" text-center pclickbox">  
+        	<div class="fixedimgboxdiv_std fixedimgboxdiv_s200">
+            <img class=" img-responsive center-block js-my-replace-img " src="./image/20230211110916488.png"   data-must-crop="" data-myimg-width="800" data-myimg-ration="800:1600" data-id="10497_bk_56183_ig1_1"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">            </div> 
+            <h4 class="fixcovertithb map_click bk_ftcc" data-type="pfind" data-p=".pclickbox" data-target="img">
+                <lhz   data-id="10497_bk_56183_ttp_1"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">时光轴（黑夜模式）</lhz>            </h4>  
+        </div>
+      </div>
+            <div class=" col-md-4 col-xs-4 " style="padding:0;" >
+        <div class=" text-center pclickbox">  
+        	<div class="fixedimgboxdiv_std fixedimgboxdiv_s200">
+            <img class=" img-responsive center-block js-my-replace-img " src="./image/2023021111094135.png"   data-must-crop="" data-myimg-width="800" data-myimg-ration="800:1600" data-id="10497_bk_56183_ig1_2"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">            </div> 
+            <h4 class="fixcovertithb map_click bk_ftcc" data-type="pfind" data-p=".pclickbox" data-target="img">
+                <lhz   data-id="10497_bk_56183_ttp_2"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">黑夜模式开关</lhz>            </h4>  
+        </div>
+      </div>
+            <div class=" col-md-4 col-xs-4 " style="padding:0;" >
+        <div class=" text-center pclickbox">  
+        	<div class="fixedimgboxdiv_std fixedimgboxdiv_s200">
+            <img class=" img-responsive center-block js-my-replace-img " src="./image/20230211110958459.png"   data-must-crop="" data-myimg-width="800" data-myimg-ration="800:1600" data-id="10497_bk_56183_ig1_3"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">            </div> 
+            <h4 class="fixcovertithb map_click bk_ftcc" data-type="pfind" data-p=".pclickbox" data-target="img">
+                <lhz   data-id="10497_bk_56183_ttp_3"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt">设置（黑夜模式）</lhz>            </h4>  
+        </div>
+      </div>
+        
+      </div>
+      <div style="margin-top: 200px;">
+        <h3 class="js-my-replace-txt" style="text-align:center;color:#ffffff;">动态图演示</h3>
+        <div >
+            <img id="gif-box" src="./image/run1.gif">
+            <img id= "gif-box" padding-left="0 150px" src="./image/run2.gif"> 
+            <div>
+                <h3 style="float:left;margin:0 260px;color:hsl(17, 85%, 55%);">注册与登录 &nbsp;</h4>
+                <h3 style="float:left;margin:0 80px;color:hsl(17, 85%, 55%);">功能演示</h4>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+</div> 
+       </div>    
+    </div>
+
+ 
+          <!-- bkoutstart -->
+<div id="bk_56185" data-mkid="0" data-mix-mkbkid="0_bk_56185" data-cover="https://cdn.vipcom.cc/Public/image/block/bt_one_icon.png?31" 
+         data-name="一个框加icon列表加图片"
+         data-file-path="Block/Bottom/bt_one_icon"
+         data-bid="56185"
+         data-order=""
+         data-use-type="bt"
+         data-vip-level="0"
+         class="blockpos cc_bgcc_bak js-my-pblock "
+         style="background-image:url();"  data-bgsrc="null" data-id="10497_bk_56185_bg"  data-href='' data-pmkid="0" data-img-type="css" data-is_del="" data-mb-show=""  data-class=""
+         data-hide="0" 
+         data-hide-exp=""
+         data-hide-status="0"
+         data-align="center"
+         >
+        <!--bkoutend-->
+        <!--bkoutstart-->
+                <!--bkoutend-->
+                
+                <div style="display:none;" class="btn_set_cc btn_set_bgcc"  data-mypop-data="{bkbgcc:{def:'#fff',type:'color',title:'内框背景色'}}" ></div>
+                
+        <!-- <div style="display:none;" class="btn_set_cc btn_set_ftcc"  data-mypop-data="{intro:{type:'intro',title:'注：如果您给目标单独设置了颜色，以下设置将没有效果'},bkftcc:{def:'bk_ftcc',data:[{s:'黑色',v:'bk_ftcc'},{s:'白色',v:'wt_ftcc'},{s:'灰色',v:'gray_ftcc'},{s:'自动主题色',v:'pubcc'}],type:'tag_select',title:'内框字体颜色'}}" ></div> -->
+        
+                <!--bkoutstart-->
+                <!--bkoutend-->
+        <!--bkoutstart-->
+        
+        <div id="bk_56185_blockrendbox" class="blockrendbox" >  <!--bkoutend-->
+             <!--blockname 一个框加icon列表加图片 blocknameend-->
+ <div > 
+ <div class="container notsetblockbg">
+    <div class="row  autopadding30_1 inner_set_num" data-key="lpk" data-max="12" data-min="2" data-lp-num="2" data-lp-title="">
+        <div class="text-center bk_ftcc">
+            <img class=" img-responsive center-block js-my-replace-img " src="./image/63e70e386db67.jpg"   data-must-crop="" data-myimg-width="" data-myimg-ration="" data-id="10497_bk_56185_ig"  data-href='' data-pmkid="0" data-is_del="" data-mb-show="" data-class="">            <h3><lhz   data-id="10497_bk_56185_tt_a"  data-href='' data-pmkid="0" data-is_del="" class="js-my-replace-txt"><span style="color:#000000;"><span>联系方式</span></span></lhz></h3>
+            <div>
+               <lhz   data-id="10497_bk_56185_tt_a1"  data-href='' data-pmkid="0" data-is_del="0" class="js-my-replace-txt"><span style="color:#000000;font-size:24px;white-space:normal;">微信号：cmder2</span></lhz> 
+            </div>   
+            
+            <h3><lhz  style="display:none;" data-id="10497_bk_56185_tt_ac" data-pmkid="0" data-is_del="1" class="js-my-replace-txt js-my-hide-item"></lhz></h3>
+            <div>
+                                <div data-id="10497_bk_56185_btn21"  data-myscs-myiconst="iconpeople" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz18" data-myscs-cc_self="pubbtnsecc" data-myscs-pubrdsp="btnisrd" data-myscs-pubrdspsize="pubbtnrd_50p" data-myscs-pubstyle="pubbtnbg" data-myscs-pubsdcc="pubbtnsdcc"   data-href='http://file:///Q:/about_me/nianfanjun/index.html' data-btn-type=""  data-act="" class="js-my-btn-replace-set btn btn-default-my myiconfont  iconpeople 0 pubftsz18 pubbtnsecc btnisrd pubbtnrd_50p pubbtnbg pubbtnsdcc "   >  </div>                                <div data-id="10497_bk_56185_btn22"  data-myscs-myiconst="iconceshi" data-myscs-isdel="0" data-myscs-pubftsize="pubftsz18" data-myscs-cc_self="pubbtnsecc" data-myscs-pubrdsp="btnisrd" data-myscs-pubrdspsize="pubbtnrd_50p" data-myscs-pubstyle="pubbtnbg" data-myscs-pubsdcc="pubbtnsdcc"   data-href='https://blog.csdn.net/weixin_45913922?type=blog' data-btn-type=""  data-act="" class="js-my-btn-replace-set btn btn-default-my myiconfont  iconceshi 0 pubftsz18 pubbtnsecc btnisrd pubbtnrd_50p pubbtnbg pubbtnsdcc "   >  </div>                            </div> 
+        </div>
+            
+    </div>
+    
+</div>    
+</div>        </div>    
+    </div>
+
+ 
+        
+  <!--bkoutstart-->  
+  </body>
+  <!--bkoutend-->   
+    
+  <!--bkoutstart-->  
+  <!--set_include_clone_bt-->
+   
+   <link rel="stylesheet" type="text/css" href="./css/jquery-confirm.css">
+   <link rel="Stylesheet" type="text/css" href="./css/swiper-bundle.min.css">
+   
+   <!-- 图片弹出插件 -->
+  <script src="./js/baguetteBox.min.js"></script>
+  
+  <!-- kiss滚动动画css -->
+  <link rel="Stylesheet" type="text/css" href="./css/scrollanim.min.css">
+  
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/jquery.nav.js"></script>
+  
+  <!-- kiss滚动动画js -->
+ <script src="./js/scrollanim.js"></script>
+  
+ <!-- 懒加载  -->
+ <script src="./js/lazyload.min.js"></script>
+  
+    
+  <script>
+      $(function(){
+         //编辑模式下 
+         $('#preloader').fadeOut();
+        var my_pop_ope = new sl.app.my_pop_ope();
+	my_pop_ope.bind_event();
+
+        $('.js_up_totop').on('click',function(event) {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: 0
+          }, 600);
+          return false;
+        });
+        
+        $('#navbox').onePageNav();
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() > 80) {
+                $('.leftsaidtit').show();
+            } else {
+                $('.leftsaidtit').hide();
+            }
+        });
+        
+        $(".js_more_nav_show").hover(function(){
+           $(".jsmynavhide").show();
+        },function(){
+       //    $(".jsmynavhide").hide();
+        });
+        $(".jshidenavmore").hover(function(){
+           $(".jsmynavhide").hide();
+        },function(){
+           
+        });
+        $("#navbox").hover(function(){
+
+        },function(){
+           $(".jsmynavhide").hide();
+        });
+        setTimeout(function(){
+            $("[data-kui-anim]").css('opacity',1);
+        },10000);
+        
+        //公共js定位到模块
+        $('.nav_fixed_pos_bak').click(function(){
+            var tid=$(this).attr('href');
+            if($(tid).length==0||$(tid)==undefined){
+                return;
+            }
+            $('html, body').animate({
+              scrollTop: $(tid).offset().top
+            }, 600);
+        })  
+          
+        baguetteBox.run('.allmyimgs', {
+        captions: function(element) {
+            // `this` == Array of current gallery items
+                    return element.getElementsByTagName('img')[0].alt;
+                }
+        });
+    //   $.tip_reload();
+       var lazyLoadInstance = new LazyLoad({
+            // Your custom settings go here
+          });
+          
+          kissuiScrollAnim.setOptions({ 
+            'autoReset': false,
+            'triggerOnInit': false
+          });
+          if (self != top) {
+        	  $(".beian_a").remove();
+        	  $(".js_user_report").remove();
+          }
+      });
+  </script>    
+  
+  
+  <!--bkoutend-->  
+  
+<!--bkoutstart-->    
+  
+<div id="my_data_box_topmsg_bak" style="display:none;"></div>
+
+		
+
+<div data-id="10497" 
+	id="mypublic_bottom_edit" 
+	style="width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #333;
+	color: #ececec;
+	font-size: 12px;
+	text-align: right;">
+	                
+		<a href="javascript://" style="color:#ececec;font-size: 12px;" class="js_user_id_check_person">
+					</a>
+                
+		&nbsp;&nbsp;
+	<!-- <a style="color:#ececec;font-weight:600;font-size:14px;" href="https://vipcom.cc">&nbsp; 超级单页制作   &nbsp; </a>	&nbsp;&nbsp; -->
+	
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	
+	&nbsp;&nbsp;&nbsp;
+</div>
+
+
+<div style="
+     position:fixed;
+     z-index:9999;
+     background-color:rgb(0,0,0);
+     box-shadow: 0 0 4px rgba(0, 0, 0, 0.55), 0 4px 8px rgba(0, 0, 0, 0.28);
+     color:#fff;
+     text-align:center;width: 50px;
+height: 50px;
+line-height: 50px;
+font-size: 16px;
+right: 15px;
+bottom: 33px;
+border-radius: 50%;
+display:none;
+cursor: pointer;" class="iconfont iconup1 js_up_totop leftsaidtit">
+</div>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_1519554_gr3baz0g5iw.css">
+<script type="text/javascript"  src="./js/mycache_fetch.js"></script>
+<script type="text/javascript"  src="./js/jquery.topmsg.js"></script>
+<script type="text/javascript" src="./js/mypub_open.js"></script>
+<script type="text/javascript" src="./js/myatc_user.js"></script>
+<script type="text/javascript" src="./js/my_pop_ope.js"></script>
+
+
+
+<div style="height:2px;overflow:hidden;position:absolute;bottom:-10px;">
+</div>
+
+<script src="./js/mXdfvexpg.js"></script>
+<script type="text/javascript" src="./js/mypub_open.js?55"></script>
+<script src="./js/jquery-confirm.js"></script>
+<script src="./js/jquery.topmsg.js"></script>
+
+
+<script type="text/javascript" src="./js/myopen_user.js?2abcd"></script>
+
+
+<script type="text/javascript">
+	$(function(){	
+		$('.js-myet-pop').click(function(){	
+			$.alert('<img src="'+$(this).attr('data-my-pop-src')+'">');
+		});
+	});
+</script>
+
+
+
+
+	<script type="text/javascript">
+		
+	</script>
+
+
+
+<script type="text/javascript">
+	$(function(){
+		setTimeout(function(){
+			$('.myjsloader').hide();
+		},6000);
+	});
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1007be82a2ad3c69e4764c86d825a4a2";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</html>
+<!--bkoutend--><div style="display:none"></div>
