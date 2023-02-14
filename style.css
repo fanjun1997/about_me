@@ -55,6 +55,7 @@ div.tab button.active {
     border-right:2px solid #3fb8ae;
     border-bottom:2px solid #2980b9;
     border-left:2px solid #3fb8ae;
+    background-color: #42628b;
     
     
 }
@@ -94,8 +95,13 @@ div.tab button.active {
     margin-left: 50px;
     list-style-type:disc;
 }
+.skill{
+    list-style-type:disc;
+    margin-left: 50px;
+}
+
 .red{
-    color: #ff0000;
+    color: #FF6600;
 }
 #myIDphoto img{
     cursor: pointer;
